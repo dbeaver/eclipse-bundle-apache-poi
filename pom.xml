@@ -3,14 +3,31 @@
          xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <modelVersion>4.0.0</modelVersion>
-    <parent>
-        <groupId>org.jkiss.dbeaver</groupId>
-        <artifactId>dbeaver</artifactId>
-        <version>1.0.0</version>
-        <relativePath>../../dbeaver/</relativePath>
-    </parent>
     <groupId>org.jkiss.bundle</groupId>
     <artifactId>org.jkiss.bundle.apache.poi</artifactId>
     <version>3.16.0</version>
     <packaging>eclipse-plugin</packaging>
+
+    <properties>
+        <tycho-version>0.26.0</tycho-version>
+    </properties>
+
+    <build>
+        <plugins>
+
+            <plugin>
+                <groupId>org.eclipse.tycho</groupId>
+                <artifactId>tycho-maven-plugin</artifactId>
+                <version>${tycho-version}</version>
+                <extensions>true</extensions>
+            </plugin>
+
+            <plugin>
+                <groupId>org.eclipse.tycho</groupId>
+                <artifactId>tycho-packaging-plugin</artifactId>
+                <version>${tycho-version}</version>
+            </plugin>
+
+        </plugins>
+    </build>
 </project>

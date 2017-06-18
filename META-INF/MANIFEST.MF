@@ -12,6 +12,7 @@ Bundle-ClassPath: poi-3.16.jar,
  ooxml-lib/xmlbeans-2.6.0.jar
 Bundle-RequiredExecutionEnvironment: JavaSE-1.7
 Bundle-Vendor: Apache
+Eclipse-BundleShape: dir
 Export-Package: com.graphbuilder.curve,
  com.graphbuilder.geom,
  com.graphbuilder.math,
