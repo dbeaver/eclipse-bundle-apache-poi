@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: Apache POI bundle for DBeaver office extension
 Bundle-SymbolicName: org.jkiss.bundle.apache.poi;singleton:=true
-Bundle-Version: 4.1.0
+Bundle-Version: 4.1.1
 Bundle-ClassPath: lib/commons-codec-1.12.jar,
  lib/commons-collections4-4.3.jar,
  lib/commons-compress-1.18.jar,
@@ -16,6 +16,14 @@ Bundle-RequiredExecutionEnvironment: JavaSE-1.7
 Bundle-Vendor: Apache
 Eclipse-BundleShape: dir
 Export-Package: org.apache.poi,
+ org.apache.poi.hssf,
+ org.apache.poi.hssf.eventmodel,
+ org.apache.poi.hssf.eventusermodel,
+ org.apache.poi.hssf.extractor,
+ org.apache.poi.hssf.model,
+ org.apache.poi.hssf.record,
+ org.apache.poi.hssf.usermodel,
+ org.apache.poi.hssf.util,
  org.apache.poi.ss,
  org.apache.poi.ss.extractor,
  org.apache.poi.ss.format,
